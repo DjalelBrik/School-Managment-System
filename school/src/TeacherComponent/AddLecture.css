@@ -1,0 +1,83 @@
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 70%;
+  margin: auto;
+  font-family: sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sub {
+  color: #777;
+  margin-top: -5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.input{
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #f2f2f7;
+  font-size: 14px;
+}
+.input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.42);
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+textarea.textarea-field {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.add-btn {
+  background: #080820;
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  margin-top: 15px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  opacity: 0.85;
+}
+
+input[type="file"]::file-selector-button {
+  background: #e2e2ea;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #d6d6de;
+}
