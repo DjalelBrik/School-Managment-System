@@ -1,10 +1,10 @@
-import Header from "./StudentComponent/Header";
+import Header from "./Header";
 import { Routes, Route } from "react-router-dom";
-import Course from "./StudentComponent/MyCourses";
-import Grade from "./StudentComponent/MyGrade";
-import Lecture from "./StudentComponent/MyLecture";
-import Register from "./StudentComponent/MyRegister";
-import Schedule from "./StudentComponent/MySchedule";
+import Course from "./MyCourses";
+import Grade from "./MyGrade";
+import Lecture from "./MyLecture";
+import Register from "./MyRegister";
+import Schedule from "./MySchedule";
 
 export default function App() {
   return (

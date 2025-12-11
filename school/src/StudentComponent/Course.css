@@ -6,10 +6,23 @@
 }
 .About{
     font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
 
 }
-.About p{ color:#4A5565 ;}
+
 .Logo
 {display: flex; 
 align-items: center;
 gap: 20px;}
+.Degree{
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 20px;
+    border-radius: 8px;
+    color: white;
+}

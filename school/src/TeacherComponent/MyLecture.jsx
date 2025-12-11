@@ -4,7 +4,7 @@ import { StickyNote } from "lucide-react";
 import Add from "./AddLecture.jsx"
 export default function MyLecture() {
   return (
-  <>
+  <div className="Page">
       <div><Add/></div>
     <div className="Box">
       <div className="Title">
@@ -21,5 +21,5 @@ export default function MyLecture() {
         <Lecture />      
       </div>
     </div>
- </> );
+ </div> );
 }

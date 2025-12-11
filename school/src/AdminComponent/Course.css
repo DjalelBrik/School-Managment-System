@@ -1,0 +1,43 @@
+.Container{
+    border:1px solid rgba(0,0,0,0.15);
+    border-radius: 15px;
+    width: 80%;
+    margin-left:10% ;
+    padding: 20px;
+   }
+.title{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: medium;
+
+}
+.title p{
+    color: rgba(0, 0, 0, 0.447);
+    font-size: small;
+}
+span{
+    background-color: black;
+    color: white;
+    padding: 2px;
+    border-radius: 8px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+}
+button {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border:none;
+    background-color: #D4183D;
+    color: white;
+    font-size: 15px;height: 30px;
+    gap: 10px;
+
+}
+.button{display: flex;
+justify-content: center;}

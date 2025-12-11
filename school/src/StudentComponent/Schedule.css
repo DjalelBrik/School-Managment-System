@@ -21,3 +21,18 @@ align-items: center;
 gap: 20px;
 font-size: small;
 }
+.time p{background-color: black;
+width: 60px;
+color: white;
+    padding: 5px;
+    border-radius: 8px;
+
+}
+.time p:nth-child(2){
+    width: 90px;
+    
+}
+.time{
+    display: flex;
+    gap: 10px;
+}

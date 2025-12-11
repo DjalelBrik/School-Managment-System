@@ -10,13 +10,12 @@
 
 .Title {
   font-family: sans-serif;
-  margin-bottom: 15px;
-
+  gap:20px;
 }
 
 .Title p {
   color: #4A5565;
-  margin-top: -5px;
+  margin-top: 10px;
 }
 
 .Course {
@@ -27,4 +26,6 @@
 .Stick{display: flex;
 align-items: center;
 gap: 10px;
+}
+.Page{  margin: 40px auto;          
 }

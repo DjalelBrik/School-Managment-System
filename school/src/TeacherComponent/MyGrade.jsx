@@ -1,8 +1,11 @@
 import "./MyGrade.css";
 import Grade from "./Grade";
+import Add from  "./AddGrade"
+
 import { GraduationCap } from "lucide-react";
 export default function MyGrade() {
-  return (
+  return (<div className="Page">         <Add/>   
+
     <div className="Box">
       <div className="Title">
         <div className="Stick"><GraduationCap/>
@@ -15,8 +18,8 @@ export default function MyGrade() {
       </div>
 
       <div className="Course">
-        <Grade />      
+        <Grade />   
       </div>
     </div>
-  );
+ </div> );
 }

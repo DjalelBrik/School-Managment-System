@@ -23,30 +23,27 @@ export default function AddLecture() {
           <option value="Deutch">Deutch</option>
         </select>
 
-        <label>Lecture Title</label>
+        <label>Student</label>
         <input
           className="input"
           type="text"
-          placeholder="e.g., Introduction to Past Tense"
+          placeholder="Select a Student"
         />
 
-        <label>Date</label>
+        <label>Assignment Name</label>
         <input
           className="input"
-          type="date"
-          placeholder="mm/dd/yyyy"
+          type="text"
+          placeholder="e.g., Vocalbulary Quiz 2"
         />
 
-        <label>Lecture Content</label>
-        <textarea
-          className="input textarea-field"
-          placeholder="Enter the lecture content and materials..."
-        ></textarea>
-
-        <label>Upload Materials</label>
-        <input className="input file" type="file" />
-
-        <button className="add-btn">+ Add Lecture</button>
+        <label>Grade</label>
+        <input
+          className="input"
+          type="Number"
+          placeholder="85"
+        ></input>
+        <button className="add-btn">+ Add Grade</button>
       </div>
     </div>
   );

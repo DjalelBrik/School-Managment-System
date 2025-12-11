@@ -6,9 +6,10 @@
 }
 .About{
     font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
 
 }
-.About p{ color:#4A5565 ;}
 .Logo
 {display: flex; 
 align-items: center;

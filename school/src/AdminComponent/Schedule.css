@@ -1,0 +1,52 @@
+.Container{
+    border:1px solid rgba(0,0,0,0.15);
+    border-radius: 15px;
+    width: 80%;
+    margin-left:10% ;
+    padding: 20px;
+   }
+.Tit{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     font-weight: 200;
+}
+.Tit p:nth-child(2) {
+    color: rgba(0, 0, 0, 0.447);
+    font-size: small;
+}
+.Trash{
+    color: red;
+    padding: 5px;
+    border-radius: 8px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    border:none;
+    background-color: white;
+}
+.time-room p{
+    background-color: black;
+    color: white;
+    width: 60px ;
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: small;
+    border: 2px solid rgba(0, 0, 0, 0.059);
+}
+
+.time-room p:nth-child(2){
+    width: 80px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+.time-room{
+    display: flex;
+    gap: 10px;
+}

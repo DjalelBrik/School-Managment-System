@@ -1,0 +1,46 @@
+.StudentCard {
+  background: white;
+  border-radius: 15px;
+  padding: 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.Left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.Avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #eef0ff;
+  color: #4b57d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.Name {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.Level {
+  font-size: 14px;
+  color: #555;
+}
+
+.Status {
+  background: #eaf4ff;
+  padding: 6px 18px;
+  border-radius: 20px;
+  color: #2d79e4;
+  font-weight: 500;
+}

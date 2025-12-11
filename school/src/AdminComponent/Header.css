@@ -25,9 +25,7 @@ header{
 }
 .Title{
     font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
 }
 .title{
     color: #312C85;

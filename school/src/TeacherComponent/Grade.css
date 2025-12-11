@@ -6,19 +6,21 @@
     font-family: sans-serif;
     width: 90%;
 }
-.About{
+.Aboutt{
     font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
 
 }
-.About p{ color:#4A5565 ;}
-.Logo
-{display: flex; 
-align-items: center;
-gap: 20px;
-color: #4A5565;}
-.Logo p{
-     display: flex; 
-align-items: center;
-gap: 20px;
-font-size: small;
+
+.Grade p{
+    background-color: black;
+    width: 30px;
+    height: 20px;
+    color: white;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
 }

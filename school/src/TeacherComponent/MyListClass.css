@@ -1,0 +1,61 @@
+.Container {
+  background: transparent;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: white;
+    margin: 40px auto;          
+
+}
+
+.Title {
+  margin-bottom: 25px;
+}
+
+.TitleHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Title h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.Title p {
+  color: rgba(0, 0, 0, 0.55);
+  margin: 5px 0 0 0;
+}
+
+.SectionTitle {
+  font-weight: 600;
+  margin: 25px 0 10px 0;
+  font-size: 16px;
+  color: #222;
+}
+
+.StudentList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Student {
+  margin: 0;
+}
+
+.StudentCard {
+  background-color: white;
+  border-radius: 12px;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}

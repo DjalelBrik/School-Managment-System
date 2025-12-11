@@ -1,6 +1,5 @@
 .Box {
-  min-width: 70%;
-  max-width: 800px;
+  max-width: 72%;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   padding: 20px;
@@ -28,4 +27,8 @@
 .Stick{display: flex;
 align-items: center;
 gap: 10px;
+}
+.Page{
+    margin: 40px auto;          
+
 }

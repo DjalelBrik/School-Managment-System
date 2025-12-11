@@ -3,7 +3,7 @@ import { BookOpen } from "lucide-react";
 export default function Lecture(){
     return(
         <div className="Box">
-            <div className="About">
+            <div className="Aboutt">
             <h3 className="Title">Introduction to English Grammar</h3>
             <p className="teacher">English - Beginner</p>
             </div>
