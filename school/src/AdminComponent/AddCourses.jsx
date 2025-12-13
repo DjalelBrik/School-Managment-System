@@ -1,6 +1,39 @@
+import { useState } from "react";
 import "./AddCourses.css";
-import Courses from "./Courses"
+import Courses from "./Courses";
+
 export default function AddCourses() {
+  const [language, setLanguage] = useState("");
+  const [level, setLevel] = useState("");
+  const [name, setName] = useState("");
+  const [capacity, setCapacity] = useState("");
+
+  const [coursesList, setCoursesList] = useState([]);
+
+  const handleCreate = () => {
+    if (!language || !level || !name || !capacity) {
+      alert("Please fill all fields");
+      return;
+    }
+
+    const newCourse = { language, level, name, capacity };
+
+    setCoursesList([...coursesList, newCourse]);
+
+    setLanguage("");
+    setLevel("");
+    setName("");
+    setCapacity("");
+  };
+
+  const handleDeleteCourse = (indexToDelete) => {
+    if (!window.confirm("Delete this course?")) return;
+
+    setCoursesList(
+      coursesList.filter((_, index) => index !== indexToDelete)
+    );
+  };
+
   return (
     <>
       <div className="container">
@@ -10,42 +43,68 @@ export default function AddCourses() {
         </div>
 
         <div className="form">
-
           <label>Language</label>
-          <select className="input">
-            <option value="" disabled selected hidden>Select a language</option>
-            <option value="English">English</option>
-            <option value="Spanish">Spanish</option>
-            <option value="German">German</option>
-            <option value="Italian">Italian</option>
-            <option value="Portuguese">Portuguese</option>
-            <option value="Japanese">Japanese</option>
-            <option value="Chinese">Chinese</option>
-            <option value="French">French</option>
+          <select
+            className="input"
+            value={language}
+            onChange={(e) => setLanguage(e.target.value)}
+          >
+            <option value="" disabled hidden>Select a language</option>
+            <option>English</option>
+            <option>Spanish</option>
+            <option>German</option>
+            <option>Italian</option>
+            <option>Portuguese</option>
+            <option>Japanese</option>
+            <option>Chinese</option>
+            <option>French</option>
           </select>
 
           <label>Level</label>
-          <select className="input">
-            <option value="" disabled selected hidden>Select Level</option>
-            <option value="A1">A1</option>
-            <option value="A2">A2</option>
-            <option value="B1">B1</option>
-            <option value="B2">B2</option>
-            <option value="C1">C1</option>
-            <option value="C2">C2</option>
+          <select
+            className="input"
+            value={level}
+            onChange={(e) => setLevel(e.target.value)}
+          >
+            <option value="" disabled hidden>Select Level</option>
+            <option>A1</option>
+            <option>A2</option>
+            <option>B1</option>
+            <option>B2</option>
+            <option>C1</option>
+            <option>C2</option>
           </select>
 
           <label>Course Name</label>
-          <input type="text" className="input" placeholder="e.g., English - Beginner" />
+          <input
+            type="text"
+            className="input"
+            placeholder="Course Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
 
           <label>Maximum Capacity</label>
-          <input type="number" className="input" placeholder="Enter capacity" />
-         <div className="btn">
-          <button className="add-btn">+ Create Course</button></div>
+          <input
+            type="number"
+            className="input"
+            placeholder="Maximum Capacity"
+            value={capacity}
+            onChange={(e) => setCapacity(e.target.value)}
+          />
+
+          <div className="btn">
+            <button type="button" className="add-btn" onClick={handleCreate}>
+              + Create Course
+            </button>
+          </div>
         </div>
-      </div >
-      <div className="Box"><Courses/>
-</div>
+      </div>
+
+      <Courses
+        courses={coursesList}
+        onDelete={handleDeleteCourse}
+      />
     </>
   );
 }

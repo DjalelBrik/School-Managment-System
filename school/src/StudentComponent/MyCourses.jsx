@@ -1,7 +1,11 @@
 import "./MyCourses.css";
 import Course from "./Course";
+import { useContext } from "react";
+import { CoursesContext } from "./CoursesContext";
 
 export default function MyCourses() {
+  const { courses } = useContext(CoursesContext);
+
   return (
     <div className="Box">
       <div className="Title">
@@ -10,8 +14,11 @@ export default function MyCourses() {
       </div>
 
       <div className="Course">
-        <Course />      
+        {courses.length === 0 && <p>No courses yet</p>}
 
+        {courses.map((course) => (
+          <Course key={course.id} {...course} />
+        ))}
       </div>
     </div>
   );

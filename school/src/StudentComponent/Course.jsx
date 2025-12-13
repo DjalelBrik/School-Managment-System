@@ -1,14 +1,14 @@
 import "./Course.css"
 import { BookOpen } from "lucide-react";
-export default function Course(){
+export default function Course({title,nameteacher,degree}){
     return(
         <div className="Box">
             <div className="About">
                 <div>
-            <h3 className="Title">English-Beginer</h3>
-            <p className="teacher">Ms-John</p>
+        <h3 className="Title">{title}</h3>
+            <p className="teacher">{nameteacher}</p>
             </div>
-            <p className="Degree">A1</p>
+            <p className="Degree">{degree}</p>
             </div>
             <div className="Logo">
               <BookOpen/>
