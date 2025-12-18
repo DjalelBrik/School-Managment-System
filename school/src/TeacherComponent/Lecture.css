@@ -15,3 +15,23 @@
 align-items: center;
 gap: 20px;
 color: #4A5565;}
+.file-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px dashed #cbd5e1;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    color: #1f2937;
+    font-size: 13px;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.file-box span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+}

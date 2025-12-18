@@ -1,15 +1,39 @@
-import "./Lecture.css"
-import { BookOpen } from "lucide-react";
-export default function Lecture(){
-    return(
-        <div className="Box">
-            <div className="Aboute">
-            <h3 className="Title">Introduction to English Grammar</h3>
-            <p className="teacher">English - Beginner</p>
-            </div>
-            <div className="Logo">
-              <p>Welcome to English! Today we'll cover basic sentence structure, subject-verb agreement, and common greetings</p>
-            </div>
+import "./Lecture.css";
+import { BookOpen, Trash2Icon, Paperclip } from "lucide-react";
+
+export default function Lecture({ lecture, onDelete }) {
+  return (
+    <div className="Box">
+      <div className="Aboute">
+        <div>
+          <h3 className="Title">{lecture.title}</h3>
+          <p className="teacher">
+            {lecture.course} • {lecture.date}
+          </p>
         </div>
-    );
+        <BookOpen />
+      </div>
+
+      <div className="Logo">
+        <p>{lecture.content}</p>
+{lecture.file && (
+  <div className="file-box">
+    <a
+      href={URL.createObjectURL(lecture.file)}
+      download={lecture.file.name}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {lecture.file.name}
+    </a>
+  </div>
+)}
+
+      </div>
+
+      <button className="delete-btn" onClick={onDelete}>
+        <Trash2Icon size={16} /> Delete Lecture
+      </button>
+    </div>
+  );
 }

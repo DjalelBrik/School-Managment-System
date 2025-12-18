@@ -11,9 +11,10 @@ export default function Header(){
         <h3 className="title">Language School Portal</h3>
         <p className="subtitle">Manage your Learning</p>
         </div>
+
     </header>
     <div className="navbar"><Navbar/></div>
-   
+    
    </>);
 
 

@@ -3,6 +3,7 @@ import App from "./App";
 
 export default function Layout() {
   return (
+    
     <BrowserRouter>
       <App />
     </BrowserRouter>
